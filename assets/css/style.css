@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700&display=swap');
+
+/*-----------------------------------------Colours*/
+
+
+/*-----------------------------------------Special paddings/margins/text*/
+
+
+/*-----------------------------------------Header*/
+
+#navbar {
+    background-color: #e0e0d1;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.menu {
+    list-style: none;
+
+}
+
+.menu-content {
+    list-style:none;
+}
+
+
+/*-----------------------------------------Hover.css*/
+
+.menu:hover {
+    color: #b3cccc;
+}
+
+
+/*-----------------------------------------Footer*/
+
+footer {
+    background-color: #e0e0d1;
+    color: darkblue;
+    min-height:50px;
+    margin: 0;
+    text-align:center
+}
+
+.company-name {
+    margin:0;
+    padding:0;
+}
+
+.company-details {
+    font-size:10px;
+    margin:0;
+    padding:0;
+}
+
+#footer-details {
+    padding: 20px;
+}
+
+/*-----------------------------------------Work / Education History*/
+
+.work-section {
+    text-align:center;
+}
+
+.work {
+    text-align:center;
+    
+}
+
+.qualifications {
+    margin-bottom: 25px;
+    text-align:center;
+}
+
+.timeline {
+    padding: 0em 4em 1em 2em;
+    position: relative;
+    border-bottom: 1px solid;
+}
+
+.timeline:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 2em;
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline:after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 2em;
+    position: absolute;
+    bottom: -6px;
+    border-radius: 15px;
+    content: "";
+}
+
+
+
+/*-----------------------------------------About Me*/
+
+
+/*-----------------------------------------Contact Form*/
+
+.contact-text {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.form {
+    max-width: 60%;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #b3cccc;
+    align:center;
+}
+
+
+/*-----------------------------------------Media Queries*/
+
+@media(min-width: 992px) {
+    .form {
+        padding-top: 30px;
+        min-height:240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+
+
+
