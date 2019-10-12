@@ -9,16 +9,22 @@
 
 
 
-.image {
+/*-----------------------------------------Images*/
+
+.image-resume,
+.image-about {
     padding: 0;
     margin-bottom: 60px;
     position: sticky;
     top: 0;
 }
 
+.image-me {
+    padding: 0;
+    margin-bottom: 0px;
+    position: center;
 
-
-/*-----------------------------------------Special paddings/margins/text*/
+}
 
 /*-----------------------------------------Header*/
 
@@ -72,7 +78,7 @@ footer {
     background-color: #001f13;
     color: #dbdbdb;
     min-height: 50px;
-    margin: 0;
+    margin-top: 0;
     text-align: center;
 }
 
@@ -95,6 +101,10 @@ footer {
     color: #dbdbdb;
 }
 
+span {
+    margin-left: 40px;
+}
+
 
 /*-----------------------------------------Main Page Summary*/
 
@@ -103,7 +113,8 @@ footer {
     font-size: 14px;
     color: #737373;
     margin: 0px;
-    padding: 25px;
+    padding: 15px;
+    padding-bottom: 7px;
 }
 
 section {
@@ -177,6 +188,7 @@ section {
 }
 
 
+/*timeline coding based on tutorial in Code Institute mini project FSD course*/
 
 /*dates of timeline*/
 
@@ -235,18 +247,21 @@ section {
 .about-title {
     color: #737373;
     margin: 0;
-    padding: 10px;
-    font-size: 20px;
+    padding: 25px;
+    font-size: 30px;
     font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 .about-item {
     color: #737373;
-    margin: 0;
-    padding: 5px;
+    margin: 0px;
+    padding-bottom: 65px;
+    padding-top: 20px;
     font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
-
 
 
 
@@ -258,32 +273,134 @@ section {
     align-items: center;
 }
 
+.form-control {
+    background-color: #737373;
+    color: #dbdbdb;
+}
+
+::placeholder {
+    color: #dbdbdb !important;
+}
+
+.form-control:hover {
+    background-color: #333333;
+    color: #dbdbdb;
+}
 
 
+/*button coding based on tutorial in Code Institute mini project FSD course*/
 
 button[type="submit"] {
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     background-color: #737373;
-    color:#dbdbdb;
+    color: #dbdbdb;
+    margin-left: 110px;
 }
 
 button[type="submit"]:hover {
-    background-color:#333333;
+    background-color: #333333;
 }
 
 .form-thanks {
     color: #737373;
-    text-align: ;
+    text-align: center;
+    display: block;
+    margin-left: 75px;
+    margin-bottom: 15px;
 }
 
 
 /*-----------------------------------------Media Queries*/
 
-@media(min-width: 800px) {
+/*form media query based on tutorial in Code Institute mini project FSD course*/
+
+@media (max-width:767px) {
     .form {
         padding-top: 30px;
         min-height: 240px;
         margin: 0 auto;
         max-width: 50%;
     }
+    .image-me,
+    .image-resume,
+    .image-about {
+        display: none;
+    }
+
+    .form-thanks {
+        margin-left: 15px;
+    }
+    button[type="submit"] {
+        margin-left: 50px;
+    }
+
+    .navbar-text {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:800px) {
+    .form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+    .navbar-text {
+        padding-left: 25px;
+    }
+    .form-thanks {
+        margin-left: 15px;
+    }
+    button[type="submit"] {
+        margin-left: 50px;
+    }
+    .image-me,
+    .image-resume,
+    .image-about {
+        height: 645px;
+    }
+}
+
+@media (min-width:1024px) {
+    .form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+    .navbar-text {
+        padding-left: 45px;
+    }
+    .form-thanks {
+        margin-left: 15px;
+    }
+    button[type="submit"] {
+        margin-left: 50px;
+    }
+
+    .image-me,
+    .image-resume,
+    .image-about {
+        height: 530px;
+    }
+}
+
+@media (min-width:1026px) {
+    .form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+    .image-me,
+    .image-resume {
+        height: 850px;
+    }
+    .image-about {
+        height: 750px;
+    }
+    .navbar-text {
+    padding-left: 100px;
+}
